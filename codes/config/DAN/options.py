@@ -3,15 +3,16 @@ import os
 import os.path as osp
 import sys
 import yaml
+from codes.utils import OrderedYaml
 
-try:
-    print("$$$$$$$$$$$$")
-    print(os.getcwd())
-    sys.path.append("codes")
-    # sys.path.append("gdrive/MyDrive/DAN-master/codes")
-    from utils import OrderedYaml
-except ImportError:
-    pass
+# try:
+#     print("$$$$$$$$$$$$")
+#     print(os.getcwd())
+#     sys.path.append("codes")
+#     # sys.path.append("gdrive/MyDrive/DAN-master/codes")
+#     from utils import OrderedYaml
+# except ImportError:
+#     pass
 
 Loader, Dumper = OrderedYaml()
 
