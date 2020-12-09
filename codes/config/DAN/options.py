@@ -5,6 +5,8 @@ import sys
 import yaml
 
 try:
+    print("$$$$$$$$$$$$")
+    print(os.getcwd())
     sys.path.append("codes")
     # sys.path.append("gdrive/MyDrive/DAN-master/codes")
     from utils import OrderedYaml
