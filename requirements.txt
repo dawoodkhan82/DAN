@@ -1,2 +1,5 @@
 pytorch
-numpy opencv-python lmdb pyyaml
+numpy 
+opencv-python 
+lmdb 
+pyyaml
