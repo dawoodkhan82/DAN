@@ -5,6 +5,9 @@ import sys
 import yaml
 from codes.utils import OrderedYaml
 
+print('$$$$$$$')
+print(os.listdir())
+
 # try:
 #     print("$$$$$$$$$$$$")
 #     print(os.getcwd())
