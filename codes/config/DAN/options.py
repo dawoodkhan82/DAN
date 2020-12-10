@@ -8,16 +8,6 @@ sys.path.append("codes/utils")
 from file_utils import OrderedYaml
 
 
-
-# try:
-#     print("$$$$$$$$$$$$")
-#     print(os.getcwd())
-#     sys.path.append("codes")
-#     # sys.path.append("gdrive/MyDrive/DAN-master/codes")
-#     from utils import OrderedYaml
-# except ImportError:
-#     pass
-
 Loader, Dumper = OrderedYaml()
 
 

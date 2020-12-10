@@ -4,7 +4,10 @@ import numpy as np
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from data.util import imresize
+import sys
+sys.path.append("codes/data")
+
+from util import imresize
 from scipy.io import loadmat
 from torch.autograd import Variable
 

@@ -2,7 +2,10 @@ import numpy as np
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from utils import PCAEncoder
+import sys
+
+sys.path.append("codes/utils")
+from deg_utils import PCAEncoder
 
 
 class CALayer(nn.Module):
