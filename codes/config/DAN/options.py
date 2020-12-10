@@ -3,9 +3,9 @@ import os
 import os.path as osp
 import sys
 import yaml
-print('$$$$$$$')
-print(os.listdir())
-from codes.utils import OrderedYaml
+
+sys.path.append("codes/utils")
+from file_utils import OrderedYaml
 
 
 
