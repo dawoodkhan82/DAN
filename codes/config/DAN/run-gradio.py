@@ -52,5 +52,8 @@ def predict(img):
 i = gr.inputs.Image()
 o = gr.outputs.Image()
 
+title = "DAN: Unfolding the Alternating Optimization for Blind Super Resolution"
+description = "A demo of DAN, a bline super resolution method developed by Zhengxiong Luo et al. and presented in NeurIPS 2020. Try it by uploading an image."
+
 gr.Interface(predict, i, o, allow_flagging=False,
-             analytics_enabled=False).launch()
+             analytics_enabled=False, title=title, description=description).launch()
