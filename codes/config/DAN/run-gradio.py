@@ -18,6 +18,8 @@ sys.path.insert(0, "../../")
 from img_utils import tensor2img
 import gradio as gr
 import os
+from PIL import Image
+
 
 os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
 
@@ -46,6 +48,7 @@ def predict(img):
     model.test()
     sr = model.fake_SR.detach().float().cpu()[0]
     sr_im = tensor2img(sr)
+    sr_im = sr_im[:, :, ::-1]
     return sr_im
 
 
